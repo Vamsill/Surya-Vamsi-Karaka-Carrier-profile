@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
                     </a>
                     <a
                         href="#contact"
-                        className="group relative inline-flex items-center justify-center px-6 py-3 bg-accent text-bg-secondary font-semibold rounded-lg overflow-hidden shadow-lg shadow-accent/20 transition-all duration-300 hover:bg-accent/90 hover:shadow-accent/40 w-full sm:w-auto"
+                        className="group relative inline-flex items-center justify-center px-6 py-3 bg-accent-2 text-bg-secondary font-semibold rounded-lg overflow-hidden shadow-lg shadow-indigo-500/20 transition-all duration-300 hover:bg-accent-2 hover:shadow-indigo-500/40 w-full sm:w-auto"
                     >
                         <MailIcon />
                         <span className="relative">Contact Me</span>

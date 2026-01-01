@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
 
     return (
         <SectionWrapper id="experience" title="Professional Experience" ref={sectionRef}>
-            <div className="relative border-l-2 border-accent/20 pl-8">
+            <div className="relative timeline-gradient pl-8">
                 <div className="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-accent border-4 border-bg-primary"></div>
                 <div className="mb-4">
                     <h3 className="text-2xl font-bold font-heading text-text-primary">{experience.role}</h3>

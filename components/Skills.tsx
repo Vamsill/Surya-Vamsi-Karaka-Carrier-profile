@@ -67,7 +67,7 @@ const Skills: React.FC = () => {
             <div className="space-y-8">
                 {skillsData.map((category) => (
                     <div key={category.title}>
-                        <h3 className="text-xl font-semibold font-heading text-accent mb-4">{category.title}</h3>
+                        <h3 className="text-xl font-semibold font-heading text-accent-2 mb-4">{category.title}</h3>
                         <div className="flex flex-wrap gap-3">
                             {category.skills.map((skill) => (
                                 <SkillTag key={skill.name} name={skill.name} />

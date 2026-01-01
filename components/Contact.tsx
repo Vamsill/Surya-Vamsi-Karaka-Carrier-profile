@@ -67,18 +67,18 @@ const Contact: React.FC = () => {
                 </div>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                        <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.name ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent`} />
+                        <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.name ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-2`} />
                         {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.email ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent`} />
+                        <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.email ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-2`} />
                         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                     </div>
                     <div>
-                        <textarea name="message" placeholder="Your Message" rows={5} value={formData.message} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.message ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent`}></textarea>
+                        <textarea name="message" placeholder="Your Message" rows={5} value={formData.message} onChange={handleChange} className={`w-full bg-bg-secondary border ${errors.message ? 'border-red-500' : 'border-slate-700'} rounded-md p-3 text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-2`}></textarea>
                         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
                     </div>
-                    <button type="submit" className="w-full bg-accent text-bg-secondary font-bold py-3 px-6 rounded-md hover:bg-accent/90 transition-colors">Send Message</button>
+                    <button type="submit" className="w-full bg-accent-2 text-bg-secondary font-bold py-3 px-6 rounded-md hover:bg-accent-2 transition-colors">Send Message</button>
                     {isSubmitted && <p className="text-green-400 mt-2 text-center">Thank you! Your message has been sent.</p>}
                 </form>
             </div>
